@@ -1,0 +1,9 @@
+streamlit
+openai
+spacy
+pdfplumber
+python-docx
+pandas
+plotly
+python-dotenv
+google-generativeai
