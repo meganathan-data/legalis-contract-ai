@@ -16,14 +16,14 @@ else:
     st.stop()
 
 # --- SIDEBAR ---
-st.sidebar.title("Legalis AI ⚖️")
+st.sidebar.title("Legalis AI")
 st.sidebar.caption("Powered by OpenAI GPT-4")
 
 mode = st.sidebar.radio("Select Mode", ["Analyze Contract", "Draft Template"])
 
 # --- ANALYZE CONTRACT MODE ---
 if mode == "Analyze Contract":
-    st.title("📄 Contract Risk Analyzer")
+    st.title("Contract Risk Analyzer")
     st.markdown("Upload a contract to identify risks for Indian SMEs.")
     
     f = st.file_uploader("Upload Agreement", type=['pdf', 'docx', 'txt'])
@@ -66,7 +66,7 @@ if mode == "Analyze Contract":
 
 # --- DRAFT TEMPLATE MODE ---
 elif mode == "Draft Template":
-    st.title("📝 Smart Legal Drafter")
+    st.title("Smart Legal Drafter")
     
     ctype = st.selectbox("Contract Type", ["NDA", "Employment Agreement", "Service Contract", "Rent Agreement"])
     details = st.text_area("Enter Details (Names, Dates, Salaries, Role etc.)", height=150)
